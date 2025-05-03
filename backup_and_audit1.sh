@@ -1,7 +1,7 @@
 #!/bin/bash
 
 repo_list_file="git_url.txt"
-backup_dir="/home/ubuntu/backup1"
+backup_dir="/var/backups/git-repos"
 today=$(date +%Y%m%d)
 
 mkdir -p "$backup_dir"
