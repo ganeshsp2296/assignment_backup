@@ -1,3 +1,7 @@
+git config --global --add safe.directory /var/backups/git-repos/temp1
+git config --global --add safe.directory /var/backups/git-repos/temp2
+git config --global --add safe.directory /var/backups/git-repos/temp3
+
 #!/bin/bash
 
 repo_list_file="git_url.txt"
