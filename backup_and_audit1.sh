@@ -19,7 +19,10 @@ while read -r repo_url; do
         git clone "$repo_url" "$repo_path"
     else
         echo "Updating $repo_name..."
-        cd "$repo_path" && git pull
+        cd "$repo_path" || continue
+	git reset --hard HEAD
+	git clean -fd
+	git pull
     fi
 
 
